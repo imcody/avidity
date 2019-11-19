@@ -13,6 +13,7 @@ Please clone the project and run npm install to install all dependencies. You mu
 
 
 Angular CLI: 8.3.2
+
 Node: 10.10.0
 
 When the project is cloned, please run the CMD on the root of the project and type ng serve --port 4200 --open to see HTML page in the browser.
