@@ -1,4 +1,4 @@
-# avidity
+# Avidity
 The project is an angular project which statically at this moment loads data from the open restful API of marvel using a private key.
 
 # Installa & Run
