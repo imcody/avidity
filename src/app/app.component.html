@@ -1,0 +1,61 @@
+<!-- Start about Area -->
+<section class="section-gap info-area" id="about">
+    <div class="container">				
+      <div class="single-info row mt-40 align-items-center">
+        <div class="col-lg-6 col-md-12 text-center no-padding info-left">
+          <div class="info-thumb">
+            <img src="{{viewComic?.banner}}" class="img-fluid info-img" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 no-padding info-rigth">
+          <div class="info-content">
+            <h2 class="pb-30">{{viewComic?.title}}</h2>
+            <p><span style="font-weight: bold;">Description: </span>{{viewComic?.description}}</p>
+            <br>
+            <p><span style="font-weight: bold;">Attribution Text: </span>{{viewComic?.attributionText}}</p>
+            <br>
+            <p><span style="font-weight: bold;">ISBN: </span><a>{{viewComic?.isbn}}</a></p>
+            <p><span style="font-weight: bold;">Resource URL: </span><a>{{viewComic?.resourceUrl}}</a></p>
+            <img src="assets/img/signature.png" alt="">
+
+            <!-- <h2>Characters: </h2>
+            <ul class="list-group">
+              <li class="list-group-item text-center">
+                <img src="http://lorempixel.com/400/200" />
+              </li>
+              <li class="list-group-item text-center">
+                <img src="http://lorempixel.com/400/200" />
+              </li>
+              <li class="list-group-item text-center">
+                <img src="http://lorempixel.com/400/200" />
+              </li>
+              <li class="list-group-item text-center">
+                <img src="http://lorempixel.com/400/200" />
+              </li>
+            </ul> -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="single-info row mt-40 align-items-center">
+        <div class="col-lg-12 col-md-12 no-padding info-rigth">
+          <div class="info-content">
+  
+            <h2>Characters: </h2>
+            <ul class="list-group">
+              <li *ngFor="let character of viewComic?.characters" class="list-group-item text-center">
+                <a>
+                  <img src="{{character.imagePath}}" height="200" width="200" />
+                  <h2 style="padding-top: 10px;">{{character.name}}</h2>
+                  <h4 style="padding-top: 10px;">{{character.resourceUrl}}</h4>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End about Area -->
